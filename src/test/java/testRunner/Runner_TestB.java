@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 		features={"classpath:features/TestB.feature"},
 		glue={"stepDefinitions"},
 		dryRun=false,
+		tags={"@FunctionalTest"},
 		plugin = {"junit:Reports/TestB.html"})
 
 

@@ -1,5 +1,6 @@
 Feature: TestB
 
+@FunctionalTest
 Scenario: Automating TestB scenario
 Given user is on home page
 When user clicks on Explore Investment Ideas
