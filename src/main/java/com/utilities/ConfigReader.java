@@ -1,17 +1,18 @@
 package com.utilities;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.util.Properties;
 
 public class ConfigReader {
 
 	static Properties props;
-	static String filePath = "C:\\Users\\nagaswetha.korlapati\\Desktop\\Workspace\\WeInvest_Assignment\\src\\main\\java\\com\\config\\config.properties";
-	
+		
 	//Read value of any property
 	public static String getProperty(String key)
 	{
+		String filePath = System.getProperty("user.dir")+File.separator+"Properties"+File.separator+"config.properties";
 		return getProperties(filePath).getProperty(key);
 	}
 	
