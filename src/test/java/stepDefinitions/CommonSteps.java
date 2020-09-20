@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -88,6 +89,11 @@ public class CommonSteps {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", ExplorePortfolioPage.checkBTPortfolio(driver));
 		Assert.assertTrue(ExplorePortfolioPage.checkBTPortfolio(driver).isDisplayed());
+	}
+	@After
+	public void tearDown()
+	{
+		driver.close();
 	}
 		
 }
