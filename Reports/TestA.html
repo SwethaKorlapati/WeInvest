@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.580193">
+<testcase classname="TestA" name="Automating TestA scenario" time="31.580193">
+<failure message="java.lang.AssertionError: expected [50] but found [13.79]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:496)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:125)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:178)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:188)&#13;&#10;&#9;at stepDefinitions.CommonSteps.verify_spdr(CommonSteps.java:65)&#13;&#10;&#9;at ✽.Then verify SPDR(features/TestA.feature:10)&#13;&#10;"><![CDATA[Given user is on home page..................................................passed
+When user clicks on Explore Investment Ideas................................passed
+Then user clicks on customize portfolio.....................................passed
+And user wants to enable edit controls......................................passed
+Then user changes the slider and clicks on Rebalance........................passed
+Then user clicks on Invest Now..............................................passed
+Then verify SPDR............................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [50] but found [13.79]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at stepDefinitions.CommonSteps.verify_spdr(CommonSteps.java:65)
+	at ✽.Then verify SPDR(features/TestA.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
